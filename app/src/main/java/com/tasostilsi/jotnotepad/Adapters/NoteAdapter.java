@@ -1,4 +1,4 @@
-package com.tasostilsi.smartvoicenotepad;
+package com.tasostilsi.jotnotepad.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,7 +10,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.tasostilsi.jotnotepad.Objects.NoteObj;
+import com.tasostilsi.jotnotepad.R;
 
 import java.util.ArrayList;
 
@@ -44,10 +45,11 @@ public class NoteAdapter extends ArrayAdapter<NoteObj> {
         // Populate the data into the template view using the data object
 
         if (obj != null) {
-            if (obj.getImage().length() > 5) {
+            if (obj.getImage().toString().length() > 5) {
                 //Glide.with(getContext()).load(obj.getImage()).thumbnail(Glide.with(getContext()).load(R.drawable.loader)).into(holder.image);
             } else
                 holder.image.setImageResource(R.mipmap.ic_launcher);
+
             holder.title.setText(obj.getTitle());
             holder.description.setText(obj.getDescription());
             holder.date.setText(obj.getDate());

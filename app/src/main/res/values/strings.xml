@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">Smart Voice Notepad</string>
+    <string name="app_name">Jot Notepad</string>
     <string name="action_settings">Settings</string>
+    <string name="create_note">Create Note</string>
+    <string name="create_record">Create Record</string>
+    <string name="welcome_message">Are you ready to jot your thoughts?</string>
+    <string name="welcome">Welcome</string>
+    <string name="goodbye_message">Are you sure you want to leave the jots for now?</string>
+    <string name="bye">Come back Soon</string>
+    <string name="continue_btn">Continue</string>
 </resources>

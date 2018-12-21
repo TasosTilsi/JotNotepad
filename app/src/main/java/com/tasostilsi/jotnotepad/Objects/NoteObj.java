@@ -1,24 +1,44 @@
-package com.tasostilsi.smartvoicenotepad;
+package com.tasostilsi.jotnotepad.Objects;
 
-class NoteObj {
+public class NoteObj {
+
     private String id;
-    private String image;
+    private ImageObj image;
     private String date;
     private String title;
     private String description;
     private String text;
+    private RecordObj voice;
 
-    public NoteObj(String id, String image, String date, String title, String description, String text) {
+    public NoteObj(String id, ImageObj image, String date, String title, String description, String text, RecordObj voice) {
         this.id = id;
         this.image = image;
         this.date = date;
         this.title = title;
         this.description = description;
         this.text = text;
+        this.voice = voice;
     }
 
     public NoteObj() {
 
+    }
+
+    public RecordObj getVoice() {
+        return voice;
+    }
+
+    public void setVoice(RecordObj voice) {
+
+        this.voice = voice;
+    }
+
+    public ImageObj getImage() {
+        return image;
+    }
+
+    public void setImage(ImageObj image) {
+        this.image = image;
     }
 
     public String getId() {
@@ -27,14 +47,6 @@ class NoteObj {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
 
     public String getDate() {
